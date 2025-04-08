@@ -6,12 +6,22 @@ body {
 }
 
 .heading {
-  text-align: right;
-  color: black;
+  text-align: left;          /* Chuyển sang bên trái */
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 20px;         /* Thêm lề trái */
+}
+
+.main-title {
   font-size: 36px;
   font-weight: bold;
-  margin: 20px;
-  line-height: 1.2;
+  color: black;
+}
+
+.sub-title {
+  font-size: 20px;
+  font-weight: normal;
+  color: black;
 }
 
 .menu {
