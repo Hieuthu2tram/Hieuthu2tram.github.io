@@ -11,18 +11,19 @@ body {
   align-items: center;
   padding: 20px;
   background-color: #111;
+  flex-wrap: wrap;
 }
 
 .title h1 {
-  margin: 0;
   font-size: 24px;
   font-weight: bold;
+  margin: 0;
 }
 
-.title p {
-  margin: 0;
-  font-size: 14px;
+.subtitle {
   font-weight: normal;
+  font-size: 16px;
+  margin-left: 10px;
 }
 
 .search-bar {
@@ -30,20 +31,25 @@ body {
   align-items: center;
 }
 
-.search-bar input {
-  padding: 6px 10px;
-  border: none;
-  border-radius: 4px 0 0 4px;
-  outline: none;
+.search-container {
+  position: relative;
 }
 
-.search-bar button {
-  padding: 6px 10px;
-  background-color: #444;
-  color: white;
+.search-container i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.search-container input {
+  padding: 6px 10px 6px 32px;
   border: none;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  background-color: #222;
+  color: white;
 }
 
 .menu {
