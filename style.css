@@ -1,18 +1,69 @@
-.heading-right {
-  text-align: right;
+/* Nền đen, chữ trắng */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Tiêu đề */
+.heading {
+  text-align: left;
   padding: 20px;
   margin-top: 10px;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .main-title {
   font-size: 36px;
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 .sub-title {
   font-size: 20px;
   font-weight: normal;
-  color: black;
+  color: white;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #111;
+  padding: 10px;
+  gap: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.menu a:hover, .menu a.active {
+  background-color: #d00;
+}
+
+/* Nội dung */
+.content {
+  padding: 30px;
+}
+
+.content h2 {
+  color: #ff5555;
+  margin-top: 30px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #aaa;
 }
