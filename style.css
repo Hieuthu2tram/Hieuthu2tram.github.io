@@ -1,4 +1,4 @@
-/* Nền đen, chữ trắng */
+/* Cấu hình chung */
 body {
   margin: 0;
   padding: 0;
@@ -11,8 +11,6 @@ body {
 .heading {
   text-align: left;
   padding: 20px;
-  margin-top: 10px;
-  margin-left: 20px;
 }
 
 .main-title {
@@ -27,11 +25,11 @@ body {
   color: white;
 }
 
-/* Menu */
+/* Menu ngang */
 .menu {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: #111;
   padding: 10px;
   gap: 15px;
@@ -41,23 +39,23 @@ body {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  padding: 6px 10px;
+  padding: 6px 12px;
   border-radius: 6px;
   transition: background 0.3s;
 }
 
-.menu a:hover, .menu a.active {
+.menu a:hover {
   background-color: #d00;
 }
 
 /* Nội dung */
 .content {
-  padding: 30px;
+  padding: 20px 30px;
 }
 
 .content h2 {
-  color: #ff5555;
-  margin-top: 30px;
+  margin-top: 20px;
+  color: #ff4444;
 }
 
 /* Footer */
