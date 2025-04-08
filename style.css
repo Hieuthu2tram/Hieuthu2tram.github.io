@@ -1,67 +1,85 @@
-/* Cấu hình chung */
 body {
   margin: 0;
   padding: 0;
   background-color: #000;
-  color: #fff;
+  color: white;
   font-family: Arial, sans-serif;
 }
 
-/* Tiêu đề */
-.heading {
+.header .title {
   text-align: left;
   padding: 20px;
 }
 
-.main-title {
+.header h1 {
+  margin: 0;
   font-size: 36px;
   font-weight: bold;
-  color: white;
 }
 
-.sub-title {
-  font-size: 20px;
-  font-weight: normal;
-  color: white;
+.header p {
+  margin: 0;
+  font-size: 18px;
+  font-style: italic;
 }
 
-/* Menu ngang */
 .menu {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  background-color: #111;
-  padding: 10px;
+  justify-content: flex-start;
   gap: 15px;
+  background-color: #111;
+  padding: 10px 20px;
 }
 
 .menu a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 6px;
-  transition: background 0.3s;
+  padding: 8px 12px;
 }
 
 .menu a:hover {
-  background-color: #d00;
+  background-color: red;
+  color: white;
+  border-radius: 4px;
 }
 
-/* Nội dung */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  padding: 10px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  min-width: 150px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: red;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .content {
-  padding: 20px 30px;
+  padding: 20px;
 }
 
-.content h2 {
-  margin-top: 20px;
-  color: #ff4444;
-}
-
-/* Footer */
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: #111;
-  color: #aaa;
+  font-size: 14px;
 }
