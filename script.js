@@ -1,3 +1,3 @@
-function sayHi() {
-  alert("Chào bạn! Đây là demo JavaScript.");
+function clickThu() {
+  alert("Bạn vừa click!");
 }
