@@ -9,13 +9,16 @@
 <body>
   <header class="header">
     <div class="title">
-      <h1>November <span class="subtitle">- Tập tành cài Win</span></h1>
+      <h1>November</h1>
+      <p>Tập tành cài win</p>
     </div>
     <div class="search-bar">
-      <div class="search-container">
-        <i class="fas fa-search"></i>
-        <input type="text" placeholder="Tìm kiếm...">
-      </div>
+      <form onsubmit="searchFunction(); return false;">
+        <div class="search-container">
+          <i class="fas fa-search"></i>
+          <input type="text" id="searchInput" placeholder="Tìm kiếm...">
+        </div>
+      </form>
     </div>
   </header>
 
@@ -24,7 +27,6 @@
     <a href="drive.html">Drive</a>
     <a href="phanmem.html">Phần mềm</a>
     <a href="thuthuat.html">Thủ thuật</a>
-    
     <div class="dropdown">
       <a href="#">Windows ▼</a>
       <div class="dropdown-content">
@@ -34,7 +36,6 @@
         <a href="win11.html">Win 11</a>
       </div>
     </div>
-
     <div class="dropdown">
       <a href="#">Ghost Win ▼</a>
       <div class="dropdown-content">
@@ -53,5 +54,12 @@
   <footer class="footer">
     © 2025 Hieuthu2tram. All rights reserved.
   </footer>
+
+  <script>
+    function searchFunction() {
+      const query = document.getElementById('searchInput').value;
+      alert("Bạn vừa tìm: " + query);
+    }
+  </script>
 </body>
 </html>
