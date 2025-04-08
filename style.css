@@ -1,76 +1,45 @@
-/* Reset mặc định */
-* {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  background-color: #111;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-
-/* Tiêu đề chính */
 .heading {
-  background-color: #cc0000;
-  padding: 20px;
-  text-align: center;
-  font-size: 32px;
+  text-align: right;
+  color: black;
+  font-size: 36px;
   font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  margin: 20px;
+  line-height: 1.2;
 }
 
-/* Menu ngang */
 .menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
-  background-color: #222;
-  padding: 15px;
+  background-color: #111;
+  padding: 10px;
 }
 
 .menu a {
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
-  background-color: #cc0000;
-  border-radius: 8px;
-  transition: background-color 0.3s, transform 0.2s;
+  margin: 0 15px;
   font-weight: bold;
 }
 
 .menu a:hover {
-  background-color: #ff0000;
-  transform: scale(1.05);
+  color: red;
 }
 
-/* Nội dung chính */
 .content {
-  padding: 30px;
-  text-align: center;
-}
-
-.content h2 {
-  font-size: 28px;
-  color: #ff4444;
-  margin-bottom: 10px;
-}
-
-.content p {
-  font-size: 18px;
-  color: #ccc;
-}
-
-/* Footer */
-.footer {
-  margin-top: 60px;
-  text-align: center;
   padding: 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
   background-color: #222;
-  color: #aaa;
-  font-size: 14px;
+  color: white;
 }
