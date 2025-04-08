@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.title h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.title p {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 8px;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+}
+
+.search-box button {
+  padding: 8px 12px;
+  border: none;
+  background-color: white;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.search-icon {
+  color: gray;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+  background-color: #111;
+  padding: 10px 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.menu a:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #111;
+  padding: 10px;
+  top: 35px;
+  left: 0;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+.content {
+  padding: 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #111;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
