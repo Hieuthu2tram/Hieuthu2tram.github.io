@@ -6,10 +6,10 @@ body {
 }
 
 .heading {
-  text-align: left;          /* Chuyển sang bên trái */
+  text-align: right;
   padding: 20px;
   margin-top: 10px;
-  margin-left: 20px;         /* Thêm lề trái */
+  margin-right: 20px;
 }
 
 .main-title {
